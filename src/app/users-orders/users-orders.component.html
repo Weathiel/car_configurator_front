@@ -1,0 +1,56 @@
+<mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Id. </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="user.username">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@user'> User </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.user.username}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="engine.engine">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@engine'> Engine </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.engine.engine}} {{element.engine.capacity}} {{element.engine.power}}km </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="tire.producent">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@tires'>Tires</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.tire.producent}} {{element.tire.size}}" </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="color.color">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@color'> Color </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.color.color}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="details.detail">
+            <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@detail'> Detail </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.details.detail}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="archivized">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@archivized'> Archivized </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.archivized}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@price'> Price </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.price}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="generate">
+        <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button mat-raised-button color="primary" (click) = "generatePdf(element.id, element.user.username)" i18n='@@generatePdf'>Generate PDF</button> </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="archivize">
+        <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button [disabled]="element.archivized" mat-raised-button color="primary" (click) = "archivize(element.id)" i18n='@@archivize'>Archivize</button> </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+    

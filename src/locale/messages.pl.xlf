@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="title" datatype="html">
+        <source>CAR CONFIGURATOR</source>
+        <target>KONFIGURATOR SAMOCHODU</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myorder" datatype="html">
+        <source>
+          MY ORDERS
+        </source>
+        <target>MOJE ZAMÓWIENIA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userorder" datatype="html">
+        <source>
+          USERS ORDERS
+        </source>
+        <target>ZAMÓWIENIA UŻYTKOWNIKA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="manageusers" datatype="html">
+        <source>
+          MANAGE USERS
+        </source>
+        <target>ZARZĄDZAJ UŻYTKOWNIKAMI</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="order" datatype="html">
+        <source>
+          ORDER
+        </source>
+        <target>ZAMÓW</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Login</source>
+        <target>Logowanie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitLogin" datatype="html">
+        <source>Login</source>
+        <target>Logowanie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="account?" datatype="html">
+        <source>Don&apos;t have account? Sign up</source>
+        <target>Nie masz konta? Zarejestruj się</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginproblem" datatype="html">
+        <source>
+            
+            Login problem.
+        </source>
+        <target>Problem logowania</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register" datatype="html">
+        <source>Register</source>
+        <target>Rejestracja</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitRegister" datatype="html">
+        <source>Register</source>
+        <target>Rejestracja</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerProblem" datatype="html">
+        <source>
+            
+            Register problem
+        </source>
+        <target>Problem z rejestracją</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home_text" datatype="html">
+        <source> Welcome to car configurator! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    On this site you will configure car of yours choice.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    Don&apos;t wait make dream come true!</source>
+    <target>Witaj w konfiguratorze samochodu! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    Na tej stronie skonfigurujesz swoje auto.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    Nie czekaj spełnij swe marzenia!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selEngines" datatype="html">
+        <source>Select engines</source>
+        <target>Wybierz silnik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selTires" datatype="html">
+        <source>Select tires</source>
+        <target>Wybierz opony</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selColor" datatype="html">
+        <source>Select color</source>
+        <target>Wybierz kolor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selDetails" datatype="html">
+        <source>Select details</source>
+        <target>Wybierz detale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selPrice" datatype="html">
+        <source> Price: <x id="INTERPOLATION" equiv-text="{{price}}"/></source>
+        <target> Cena: <x id="INTERPOLATION" equiv-text="{{price}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selSubmit" datatype="html">
+        <source>Submit</source>
+        <target>Wyślij</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/order/order.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="engine" datatype="html">
+        <source> Engine </source>
+        <target> Silnik </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tires" datatype="html">
+        <source>Tires</source>
+        <target>Opony</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="color" datatype="html">
+        <source> Color </source>
+        <target> Kolor </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail" datatype="html">
+        <source> Detail </source>
+        <target> Detale </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="archivized" datatype="html">
+        <source> Archivized </source>
+        <target> Archiwizowany</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="price" datatype="html">
+        <source> Price </source>
+        <target> Cena </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="generatePdf" datatype="html">
+        <source>Generate PDF</source>
+        <target>Generuj PDF </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-orders/my-orders.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user" datatype="html">
+        <source> User </source>
+        <target> Użytkownik </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="archivize" datatype="html">
+        <source>Archivize</source>
+        <target>Archiwizuj</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-orders/users-orders.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source> Email </source>
+        <target> Email </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="firstname" datatype="html">
+        <source>Firstname</source>
+        <target>Imię</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastname" datatype="html">
+        <source>Lastname</source>
+        <target>Nazwisko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-management/user-management.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

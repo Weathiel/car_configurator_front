@@ -24,6 +24,10 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -57,6 +61,52 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "production-pl": {
+              "optimization": true,
+              "outputHashing": "all",
+              "outputPath": "dist/browser/pl/",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "baseHref": "/pl/",
+              "i18nFile": "src/locale/messages.pl.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pl",
+              "i18nMissingTranslation": "error"
+            },
+            "production-en": {
+              "optimization": true,
+              "outputHashing": "all",
+              "outputPath": "dist/browser/en/",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "baseHref": "/en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -68,6 +118,12 @@
           "configurations": {
             "production": {
               "browserTarget": "CarFront:build:production"
+            },
+            "pl": {
+              "browserTarget": "CarFront:build:production-pl"
+            },
+            "en": {
+              "browserTarget": "CarFront:build:production-en"
             }
           }
         },
@@ -89,6 +145,10 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -118,8 +178,60 @@
               "devServerTarget": "CarFront:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/CarFront/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "CarFront:build",
+            "serverTarget": "CarFront:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "CarFront:build:production",
+              "serverTarget": "CarFront:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "CarFront:build:production",
+            "serverTarget": "CarFront:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "CarFront"
 }

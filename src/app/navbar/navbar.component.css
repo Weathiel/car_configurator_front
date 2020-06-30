@@ -1,0 +1,23 @@
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+
+.poland {
+    height: 32px;
+    width: 50px;
+    display: flex;
+    background-image: url(../img/poland.jpg);
+    background-size: 100%;
+    margin: auto;
+}
+
+.england {
+    height: 32px;
+    width: 50px;
+    display: flex;
+    background-image: url(../img/engilsh.jpg);
+    background-size: 100%;
+    margin: auto;
+}

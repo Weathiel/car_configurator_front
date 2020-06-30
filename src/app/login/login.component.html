@@ -1,0 +1,29 @@
+
+<mat-card>
+    <mat-card-title i18n="@@login">Login</mat-card-title>
+    <mat-card-content #anchor>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Username" formControlName="username" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" formControlName="password" required>
+                </mat-form-field>
+            </p>
+            <p class="button">
+                <button type="submit" mat-button i18n="@@submitLogin">Login</button>
+            </p>
+            <a routerLink="/register" i18n="@@account?">Don't have account? Sign up</a>
+        </form>
+        
+    </mat-card-content>
+    <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show">
+        <div class='content' i18n="@@loginproblem">
+            <!-- User-defined content -->
+            Login problem.
+        </div>
+    </kendo-popup>
+</mat-card>

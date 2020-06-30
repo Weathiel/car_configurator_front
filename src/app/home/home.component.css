@@ -1,0 +1,15 @@
+.home-image{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/home.jpg');
+    background-size:cover;
+    background-blend-mode: hue;
+}
+
+.home-text{
+    padding-top: 10%;
+    font-size: x-large;
+    font-style: normal;
+    color: floralwhite;
+    text-align: center;
+}

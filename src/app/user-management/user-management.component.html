@@ -1,0 +1,53 @@
+<mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Id. </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="username">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@user'> Username </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.username}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@email'> Email </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="firstname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@firstname'>Firstname</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.firstName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="lastname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@lastname'>Lastname</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.lastName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="roles">
+        <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@color'> Roles </mat-header-cell>
+        <mat-cell *matCellDef="let element"> <ul style="float: left;">
+            <li *ngFor="let role of element.role">{{role.roleName}}</li>
+        </ul> </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="enabled">
+            <mat-header-cell *matHeaderCellDef mat-sort-header i18n='@@detail'> Enabled </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.enabled}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+        <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button [disabled]="isAdmin(element.role)" mat-raised-button color="primary" (click) = "delete(element.id)" i18n='@@generatePdf'>Delete</button> </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="changeRole">
+        <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+        <mat-cell *matCellDef="let element"> <button [disabled]="isDisabled(element.role)" mat-raised-button color="primary" (click) = "changeRole(element.id)" i18n='@@archivize'>Make worker</button> </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+    

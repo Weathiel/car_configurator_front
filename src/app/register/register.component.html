@@ -1,0 +1,42 @@
+<mat-card>
+    <mat-card-title i18n="@@register">Register</mat-card-title>
+    <mat-card-content #anchor>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Username" formControlName="username" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" formControlName="password" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Email" formControlName="email" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="First name" formControlName="firstName">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Last name" formControlName="lastName">
+                </mat-form-field>
+            </p>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LeRh6kZAAAAAIAy7zcomHdke9ThimqXNZdgTxVU"></re-captcha>
+            <p class="button">
+                <button type="submit" mat-button i18n="@@submitRegister">Register</button>
+            </p>
+        </form>
+    </mat-card-content>
+    <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show">
+        <div class='content' i18n="@@registerProblem">
+            <!-- User-defined content -->
+            Register problem
+        </div>
+    </kendo-popup>
+</mat-card>

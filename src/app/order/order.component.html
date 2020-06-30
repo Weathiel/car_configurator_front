@@ -1,0 +1,44 @@
+<mat-card>
+    <mat-card-title>Submit new order</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <p>
+                <mat-form-field>
+                    <mat-label i18n="@@selEngines">Select engines</mat-label>
+                    <mat-select formControlName="engine" required>
+                        <mat-option *ngFor="let engine of engines" [value]="engine.id"> {{ engine.name }} {{ engine.power }}km</mat-option>
+                    </mat-select >
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label i18n="@@selTires">Select tires</mat-label>
+                    <mat-select formControlName="tire" required>
+                        <mat-option *ngFor="let tire of tires" [value]="tire.id" > {{ tire.producent }} {{ tire.size }}"</mat-option>
+                    </mat-select>
+                </mat-form-field>   
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label i18n="@@selColor">Select color</mat-label>
+                    <mat-select formControlName="color" required>
+                        <mat-option *ngFor="let color of colors" [value]="color.id"> {{ color.color }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label i18n="@@selDetails">Select details</mat-label>
+                    <mat-select formControlName="detail" required>
+                        <mat-option *ngFor="let detail of details" [value]="detail.id"> {{ detail.detail }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                
+                <mat-label i18n="@@selPrice"> Price: {{price}}</mat-label>   
+            </p>
+            <p class="button">
+                <button type="submit" mat-button i18n="@@selSubmit">Submit</button>
+            </p>
+        </form>
+    </mat-card-content>
+</mat-card>
